@@ -1,0 +1,72 @@
+--
+-- Daten für Tabelle `produktionsfirma`
+--
+
+INSERT INTO `produktionsfirma` (`Produktionsfirma_ID`, `Bezeichnung`) VALUES
+(1, 'Bavaria Filmstudios'),
+(2, 'Great American Films'),
+(3, 'Touchstone Pictures'),
+(4, 'Warner Brothers Pictures'),
+(5, 'Roland Emmerich');
+
+-- --------------------------------------------------------
+--
+-- Daten für Tabelle `filme`
+--
+
+
+INSERT INTO `filme` (`Song_ID`, `Titel`, `ErscheinungsDatum`, `Produktionsfirma_ID`) VALUES
+(3, 'Dirty Dancing', '1987-08-21', 2),
+(4, 'Sister Act', '1992-05-29', 3),
+(5, 'Harry Potter u. der Stein der Weisen', '2001-11-23', 4),
+(6, 'Casanova', '2006-02-09', 3),
+(7, 'Die unendliche Geschichte', '1984-05-20', 1),
+(8, 'Die Welle', '2008-03-13', 1),
+(9, 'Krieg in Chinatown', '1987-09-25', 2),
+(10, 'I Am Legend', '2008-01-10', 4),
+(11, 'Transcendence', '2014-04-18', 4),
+(12, 'Harry Potter und der Orden des Phönix', '2007-07-01', 4),
+(15, 'Independence Day', '1996-09-16', 5);
+
+--------------------------------------------------------------
+--
+-- Daten für Tabelle `schauspieler`
+--
+
+INSERT INTO `schauspieler` (`id`, `Vorname`, `Nachname`, `Herkunft`) VALUES
+(1, 'Christoph', 'Pollhammer', 'Norwegen'),
+(2, 'Max', 'Heinz', 'Germany'),
+(3, 'Christian', 'Mandel', 'Austria'),
+(4, 'Chris', 'Lux', 'Norway'),
+(5, 'Heath', 'Ledger', 'Australia'),
+(6, 'Jürgen', 'Vogel', 'Germany'),
+(7, 'Patrick', 'Swayze', 'USA'),
+(8, 'Cillian', 'Murphy', 'Ireland'),
+(9, 'Daniel', 'Radcliffe', 'England'),
+(10, 'Emma', 'Watson', 'England'),
+(11, 'Rupert', 'Grint', 'England'),
+(12, 'Will', 'Smith', 'USA'),
+(13, 'Dash', 'Mihok', 'USA'),
+(14, 'Willow Camille Reign', 'Smith', 'USA');
+
+-- --------------------------------------------------------
+--
+-- Daten für Tabelle `schauspieler_has_filme`
+--
+
+INSERT INTO `schauspieler_has_filme` (`Schauspieler_id`, `Filme_Song_ID`, `Rolle`) VALUES
+(5, 6, 'Casanova'),
+(6, 8, 'Rainer Wenger'),
+(7, 3, 'Johnny Castle'),
+(8, 11, 'Donald Buchanan'),
+(9, 5, 'Harry Potter'),
+(9, 12, 'Harry Potter'),
+(10, 5, 'Hermine Granger'),
+(10, 10, 'Dr. Alice Krippin'),
+(10, 12, 'Hermine Granger'),
+(11, 5, 'Ron Weasley'),
+(11, 12, 'Ron Weasley'),
+(12, 10, 'Robert Neville'),
+(12, 15, 'Captain Steven Hiller'),
+(13, 10, 'Alpha (männlich)'),
+(14, 10, 'Marley Neville');
