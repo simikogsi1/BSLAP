@@ -2,7 +2,7 @@
 /* Verbindunf zur Datenbank */
 $server = 'localhost:3306';
 $user = 'root'; 
-$pwd = ''; 
+$pwd = '368946'; 
 $db = 'adresse'; 
 
 try {
