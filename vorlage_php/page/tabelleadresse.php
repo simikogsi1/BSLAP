@@ -1,6 +1,7 @@
 <?php
 echo '<h1>Adressen</h1>';
 
+// einfache tabellen ausgabe
 $query = 'select plz_nr as "PLZ", 
         ort_name as "Ort",
         str_name as "Strasse"

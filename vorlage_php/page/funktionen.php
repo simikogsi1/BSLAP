@@ -31,7 +31,7 @@ function makeTable($query)
 
         echo '</table>';
     } catch (Exception $e) {
-        echo 'Error - Tabellen Adressen: ' . $e->getCode() . ': ' . $e->getCode() . '<br>';
+        echo 'Error - Tabelle wurde nicht erstellt!: ' . $e->getCode() . '<br>';
     }
 }
 

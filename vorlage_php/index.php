@@ -100,6 +100,9 @@
           <li class="nav-item">
               <a class="nav-link" href="?seite=new_ort">Neuen Ort Hinzufügen</a>
           </li>
+          <li class="nav-item">
+              <a class="nav-link" href="?seite=new_test">Test</a>
+          </li>
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -133,6 +136,11 @@
           case 'new_ort':
               include 'page/new_ort.php';
               break;
+
+              case 'new_test':
+                include 'page/new_test.php';
+                break;
+
         default:
           include 'page/home.php';
       }
