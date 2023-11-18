@@ -1,7 +1,0 @@
-VISIBLE bei Database Forward Engineering im Code Löschen (MySQL)
-C++ Redisturible 2019 Download https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
-MySQL Workbench download https://www.mysql.com/de/products/workbench/
-xampp Download https://www.apachefriends.org/de/download.html
-Brackets Download https://brackets.io/
-Projekte immer unter C:\xampp\htdocs speichern und da einen Ordner für jedes Projekt erstellen
-mit mysql -u root lässt sich mysql in der shell Öffnen
