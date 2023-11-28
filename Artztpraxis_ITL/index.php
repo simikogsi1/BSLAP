@@ -41,7 +41,7 @@
           </div>
           <br><br>
           <h3>Behandlungszeitraum:</h3>
-          <h5>Geben Sie ein Jahr ein über das Sie Informationen haben wollen:</h5><br>
+          <h5>Geben Sie xein Jahr ein über das Sie Informationen haben wollen:</h5><br>
           <div class="form-group">
           <label class="control-label col-sm-2" for="start">Jahr<br>
               <input type="number" id="start" name="start" required placeholder="zb 2022"></input>
@@ -85,10 +85,10 @@
               
                                   $query = "SELECT CONCAT(tz.ter_beginn, ' - ', tz.ter_ende) AS Zeitraum,
                                               CONCAT(p.per_vname, ' ', p.per_nname) AS Patient,
-                                              CONCAT(p.per_svnr, '/', p.per_geburt) AS `SvNr - Gb-Datum`,
+                                              COqueCAT(p.per_svnr, '/', p.per_geburt) AS `SvNr - Gb-Datum`,
                                               dia_name AS Diagnose
                                               FROM behandlungszeitraum tz
-                                              JOIN person p ON tz.per_id = p.per_id
+                                              JOIN person p ON tz.per_id = p.per_iimage.pngd
                                               JOIN diagnose d ON tz.dia_id = d.dia_id
                                               WHERE p.per_svnr = ? AND p.per_geburt = ? AND tz.ter_beginn LIKE ? 
                                               AND tz.ter_ende LIKE ?";
